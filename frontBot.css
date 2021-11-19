@@ -7,13 +7,14 @@
 }
 #container
 {
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     position: relative;
     display: grid;
     place-items: center;
-    background: #f6f6f6;
+    background: #ffffff;
     overflow: hidden;
+     
 }
 #dot1
 {
@@ -37,16 +38,52 @@
 }
 #screen
 {
-    height: 300px;
-    width: 400px;
+    height: 600px;
+    width: 800px;
     border-radius: 30px;
-    background: #f6f6f6;
-    border-radius: 25px;
+    background: #1e90ff;
+    
     border: 15px solid #fff;
     box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
+     box-shadow: 1px 2px 3px #000000a1;
 }
+
+#screen1
+{
+     height: 60px;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: #fff;
+    display: grid;
+    place-items: left;
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 3px 15px 15px #000000a1;
+    margin:10px auto;
+padding: 20px;
+text-align: center;
+    
+    
+}
+
+#peter
+{
+     
+ position:relative; 
+ top:-60px;
+ right:40px; 
+ padding:15px; 
+ margin:5px; 
+    border-radius: 30%;
+ 
+    
+    
+}
+
 #header
 {
     height: 60px;
@@ -60,7 +97,10 @@
     font-size: 15px;
     color: #fff;
     font-weight: bold;
-    text-shadow: 2px 2px 3px #000000a1;
+    text-shadow: 5px 2px 3px #000000a1;
+    margin:10px auto;
+padding: 30px;
+text-align: center;
 }
 
 #destra
@@ -82,7 +122,7 @@
 }
 .chat
 {
-    min-height: 40px;
+    min-height: 80px;
     max-width: 60%;
     padding: 15px;
     border-radius: 10px;
@@ -100,6 +140,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    
 }
 .usersMessages
 {
@@ -128,10 +169,12 @@
     background: transparent;
     padding: 0px 15px;
     font-size: 17px;
-}
+    }
+  
+
 #send
 {
-    height: 50px;
+    height: 90px;
     width: 24%;
     position: absolute;
     right: 0;
@@ -144,4 +187,140 @@
     background: #17e782;
     cursor: pointer;
     display: none;
+}
+$background: #f5f6fa;
+$text: #9c9c9c;
+$input-bg-color: #fff;
+$input-text-color: #a3a3a3;
+$button-bg-color: #7f8ff4;
+$button-text-color: #fff;
+
+
+:root {
+  background: $background;
+  color: $text;
+  font: 1rem "PT Sans", sans-serif;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  
+  &:hover {
+    color: $button-bg-color;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+:root {
+  background: #f5f6fa;
+  color: #9c9c9c;
+  font: 1rem "PT Sans", sans-serif;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: #7f8ff4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.btn--primary {
+  background: #0000ff;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  padding: 12px 36px;
+border-bottom: #1e90ff;
+    border: solid 1px #1e90ff;
+    box-shadow: 5px 2px 3px #000000a1;
+}
+.btn--primary:hover {
+  background: #1e90ff;
+}
+.btn--primary:active {
+  background: #0000ff;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn--inside {
+  margin-left: -96px;
+}
+
+.form__field {
+  width: 360px;
+  background: #fff;
+  color: #000000;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+  border-radius:35px;
+}
+
+.selRisposte{
+
+background:#fff;
+padding:20px 0px 5px 7px;
+border:1px solid #0000ff;
+border-radius:35px;
+width: 80%;
+resize: none;
+    box-shadow: 5px 2px 3px #000000a1;
+}
+
+.{
+    color: #006bb6;
+    font-weight: normal;
+    font-size: 18px;
+    padding:3px 3px 3px 6px;
+    border-left:3px solid #c6c1b8;
+    background:#f2efe9;
+    display:block;
 }
