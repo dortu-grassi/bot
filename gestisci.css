@@ -1,0 +1,22 @@
+.pulsante{
+	float:left;
+	width: 100px;
+	height: 30px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	cursor: pointer;
+	text-align:center;
+	font:bold 14px Arial, Tahoma, Verdana, Geneva, Helvetica, sans-serif;
+	background:gray;
+	color:#FFF;
+	padding-top: 1px;
+}
+.pulsante:hover{
+	background-position: 0 -35px;
+	background:#A4A4A4;
+	color:#FFA;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: none;
+	border-right: none;
+}
