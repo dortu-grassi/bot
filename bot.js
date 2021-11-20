@@ -18,13 +18,14 @@ function vai(){
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			//document.getElementById(div).innerHTML = "prova ajax";
-			//alert(this.responseText);
+			alert(this.responseText);
 			document.getElementById("testoRisposta").value=this.responseText;
 			msg.value="";
 		}
 	};	
 	xmlhttp.send(param);
 }
+
 function evkpress(){
 	//alert(e);
 	document.getElementById('txtMessaggioDaCercare').onkeypress = function(e) {
@@ -38,3 +39,4 @@ function evkpress(){
 	}
 					
 }
+
