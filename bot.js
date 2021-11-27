@@ -23,6 +23,7 @@ function vai(){
 			msg.value="";
 		}
 	};	
+	//alert(xmlhttp);
 	xmlhttp.send(param);
 }
 
